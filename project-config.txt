@@ -1,0 +1,11 @@
+﻿Proyecto: Repositorio Principal
+Version: 1.0.0
+Creado: 2025-08-08 23:58:14
+
+Estructura:
+- frontend: react-app, angular-app, vue-app
+- backend: python-api, java-api, cpp-services  
+- automation: n8n-workflows, scripts-python, scripts-bash
+- robotics: ros2-packages
+- oracle: Oracle_One_G9
+- tools: setup-scripts, utilidades

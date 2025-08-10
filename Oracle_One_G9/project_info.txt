@@ -1,0 +1,18 @@
+﻿# ConfiguraciÃ³n Oracle One G9
+Proyecto: Oracle One Generation 9
+Fecha inicio: 2025-08-09
+
+## Estructura de datos
+- raw/: Datos sin procesar
+- processed/: Datos procesados y limpios
+- notebooks/: Jupyter notebooks para anÃ¡lisis
+- scripts/: Scripts de procesamiento
+- models/: Modelos entrenados
+- docs/: DocumentaciÃ³n del proyecto
+
+## Herramientas recomendadas
+- Python 3.9+
+- Jupyter Lab
+- Pandas, NumPy, Scikit-learn
+- PostgreSQL
+- Docker
