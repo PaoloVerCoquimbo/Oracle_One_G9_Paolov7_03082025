@@ -1,0 +1,140 @@
+
+/*importa las fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+/* el * hace un cambio universal hace el cambio 
+a todos los elemtos html lo setea por ende quita los atrbutos por defecto  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye padding y border dentro del tamaño total del elemento */
+}
+
+/*  LO PROPUESTO POR LA CLASE */
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255); /* <- faltaba el ; */
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+
+/* esto da color de fondo y color la body    */
+body-ejemplo {
+    background-color: #000000;
+    color: #F6F6F6;
+    /*  se usa box-sizing: border-box; para que no se salga del body el box */
+
+    box-sizing: border-box; /* Incluye padding y border dentro del tamaño total del elemento */
+    font-family: Arial, sans-serif; /* Fuente legible y moderna */
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+    padding: 20px; /* Espacio alrededor del contenido */
+    text-align: center; /* Centra el texto en la página */  
+}
+
+
+/* DEFINICOIENOS DE CLASES   */
+
+/*LA PROPUESTA EN CLASES */
+.presentacion{
+
+display: flex;
+align-items: center; /* Alinea los elementos hijos verticalmente al centro */
+margin: 5%;
+justify-content: space-between; /* ✅ */
+
+flex-direction: row; /* ✅ coloca elementos en fila */
+
+}
+
+
+.presentacion2 {
+     background-color: #1A1A1A; /* Fondo oscuro para la sección de presentación, ideal para contraste con texto claro */
+    padding: 20px; /* Espacio interno dentro del contenedor, separa el contenido de los bordes */
+    border-radius: 8px; /* Bordes redondeados, da un look más suave y moderno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera debajo del contenedor, crea sensación de profundidad */
+    margin-bottom: 20px; /* Espacio externo debajo de la sección, separa de otros elementos */
+   
+    /* Flexbox para organizar el contenido internamente */
+    display: flex; /* Convierte el contenedor en un flex container */
+    flex-direction: column; /* Los elementos hijos se alinean en columna, uno debajo del otro */
+    align-items: center; /* Centra horizontalmente los elementos hijos dentro del contenedor */
+    gap: 10px; /* Espacio uniforme de 10px entre cada elemento hijo */
+
+    justify-content: space-between; /* Distribuye el espacio entre los elementos hijos, dejando espacio igual entre ellos */
+    width: 80%; /* Ancho del contenedor, ocupa el 80% del ancho del viewport */
+    max-width: 1200px; /* Ancho máximo del contenedor, evita que se expanda demasiado en pantallas grandes */
+    margin: 0 auto; /* Centra el contenedor horizontalmente en la página */
+    color: #F6F6F6; /* Color del texto dentro de la sección, blanco para buen contraste con el fondo oscuro */
+}
+
+
+
+
+.presentacion__contenido__titulo{
+
+    font-size: 2.5rem; /* Escala con la configuración de fuente base */
+    color: #43c2e2; /* Color verde brillante para el título, resalta y es atractivo */
+     font-family: "Krona One", sans-serif; /* Fuente específica importada  para el título, da un estilo único */
+
+
+
+    }
+
+.presentacion__contenido__textto
+{
+
+      font-family: "Krona One", sans-serif; /* Fuente específica importada para el texto, da un estilo único */ 
+    font-size: 20px; /* Tamaño de fuente grande para el texto, asegura buena legibilidad */
+    color: #43c2e2; /* Color verde brillante para el texto, resalta y es atractivo */
+    margin-top: 10px; /* Espacio superior para separar del título, mejora la legibilidad */
+    margin-bottom: 20px; /* Espacio inferior para separar del siguiente contenido, mejora la legibilidad */
+    text-align: center; /* Centra el texto dentro del contenedor, mejora la presentación */
+    line-height: 1.5; /* Espacio entre líneas, mejora la legibilidad del texto */
+    font-weight: 400; /* Peso de la fuente normal, asegura que el texto sea fácil de leer */
+    letter-spacing: 0.5px; /* Espacio entre letras, mejora la legibilidad y estética del texto */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas, da un estilo más fuerte y moderno */
+    text-decoration: none; /* Elimina el subrayado del texto, mejora la estética */
+    transition: color 0.3s ease; /* Transición suave para cambios de color, mejora la experiencia del usuario */
+}
+
+.titulo-destaque {
+    color: #22fd6b;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* 1️ Estilizando elementos con clases CSS  Clase para resaltar texto en la página */
+.texto-destacado {
+    color: #FF5733; /* Color llamativo pero legible */
+    font-weight: bold; /* Hace el texto más visible */
+}
+
+/* 2️ Destacando títulos con CSS Clase para resaltar títulos de blog */
+.titulo-blog {
+    color: #0097fc; /* Color azul intenso */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas para enfatizar */
+    letter-spacing: 1px; /* Espacio entre letras para mayor legibilidad */
+}
+
+/* 3️ Estilos situacionales con clases CSS  Clase para noticias urgentes */
+.urgente {
+    color: red; /* Color rojo para captar atención inmediata */
+    font-weight: bold; /* Resalta la urgencia */
+}
+
+
+/* 6️ Aplicando el modelo de caja en la práctica Ajustando modelo de caja en un párrafo */
+.caja {
+    margin: 20px; /* Separación del resto de elementos */
+    padding: 15px; /* Espacio interno alrededor del texto */
+    border: 2px solid #ffffff; /* Borde visible */
+    width: 300px; /* Ancho del contenido */
+}
+
