@@ -19,7 +19,7 @@ body{
 }
 
 .presentacion {
-    margin: 10%;
+    margin: 10% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,4 +37,32 @@ body{
 .presentacion__contenido__texto{
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
+}
+/* se crea clase para dar estilos a los botones y separaciones */ 
+.presentacion__enlaces {
+  display: flex;
+  justify-content: center; /* centra los botones */
+  flex-direction: column; /* los apila verticalmente */;
+  gap: 20px; /* espacio entre botones */
+  margin-top: 20px;
+}
+
+.presentacion__enlace__link {
+  display: inline-block;
+  width: 220px; /* más ancho */
+  padding: 14px 0; /* más alto */
+  background-color: #22D4FD; 
+  border-radius: 12px; /* más redondeado */
+  text-decoration: none;
+  text-align: center;
+  color: #000000; 
+  font-weight: bold;/* negrita */
+  font-size: 18px; /* letras más grandes */
+  transition: background 0.3s ease, transform 0.2s ease;/* suaviza la transición del color y el tamaño */
+}
+
+/* Efecto hover */
+.presentacion__enlace__link:hover {
+  background-color: #1bbce0; /* celeste más oscuro */
+  transform: scale(1.05);
 }
