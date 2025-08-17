@@ -1,0 +1,31 @@
+[33mcommit d8acd16ff5ace67dddfeb46b47646891af3e6367[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: PaoloVergara02l <Paolo.Vergara02@gmail.com>
+Date:   Sat Aug 16 09:21:33 2025 -0400
+
+    index.html: agregado div para agrupar botones
+    CHANGELOG.md: añadido formato Keep a Changelog y documentación inicial del repositorio educativo
+
+[33mcommit 2ed6915b762ce8692600e1c1f5376337c0088613[m[33m ([m[1;31morigin/main[m[33m)[m
+Merge: 504f461 6cd147e
+Author: PaoloVergara02 <paolo.vergara02@gmail.com>
+Date:   Thu Aug 14 20:00:17 2025 -0400
+
+    Merge del repositorio remoto: sincronización inicial con GitHub
+
+[33mcommit 504f461bfe589ba1c23ac783b96bfdc4b694f094[m
+Author: PaoloVergara02 <paolo.vergara02@gmail.com>
+Date:   Thu Aug 14 19:36:25 2025 -0400
+
+    Agrego toda la carpeta Cursos con archivos de HTML y CSS
+
+[33mcommit 4569487230d64548434d31015b1246e60e7bb37a[m
+Author: Paolo Vergara <Paolo.vergara02@gmail.com>
+Date:   Sat Aug 9 23:24:05 2025 -0400
+
+    Inicializar repositorio con estructura base y configuración
+
+[33mcommit 6cd147e14163b82bc1d911ed18a5fb19db58fca3[m
+Author: Paolov7Chile <128604217+PaoloVerCoquimbo@users.noreply.github.com>
+Date:   Sun Aug 3 15:45:06 2025 -0400
+
+    Initial commit
