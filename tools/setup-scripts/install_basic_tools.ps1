@@ -3,7 +3,7 @@
 # Función: Instalar todas las herramientas necesarias para desarrollo
 # Evento: Se ejecuta después de que Chocolatey esté completamente instalado
 # Fecha: 20/08/2025 - Chile
-# Autor: Configuración de Entorno de Desarrollo
+# Autor: Paolo Vergara
 # =====================================================
 
 Write-Host "🔍 VERIFICANDO ESTADO DE CHOCOLATEY..." -ForegroundColor Yellow
