@@ -103,6 +103,14 @@ body{
     background-color: var(--color-hover);
 }
 
+/* Se crea selector de Clase presenta__imagen   */
+.presentacion__imagen{
+    width: 50%; /* se ajusta a la medida de la pantalla que la visualiza la imagen */
+
+}
+
+
+
 .footer{
     color:var(--color-primaria);
     background-color: var(--color-terciaria);
