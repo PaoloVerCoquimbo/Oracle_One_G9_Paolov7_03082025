@@ -46,10 +46,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap : 40px;
 }
 
 .presentacion__contenido{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
