@@ -121,8 +121,12 @@ body {
 /* Responsive  se agrega  @media de queries usa de medida para mantener en 700px 
 y que la imagen pase a la parte principal */
 @media(max-width: 700px) {
+    .header {
+        padding: 10%; /*se agrega para hacer espacio en el header */
+    }
     .header__menu {
         flex-direction: column;
+        justify-content: center ;/*centra el menu */
         align-items: center;
         gap: 20px;
     }
