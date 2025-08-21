@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
-
 :root {
     --color-primaria: #000000;
     --color-secundaria: #F6F6F6;
@@ -13,111 +12,138 @@
 
 * {
     padding: 0;
-    margin:0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-body{
-    box-sizing: border-box;
+body {
     background-color: var(--color-primaria);
     color: var(--color-secundaria);
+    font-family: var(--fuente-montserrat);
+    font-size: 16px; /* base */
 }
 
-.header{
+.header {
     padding: 2% 0% 0% 15%;
 }
 
-.header__menu{
+.header__menu {
     display: flex;
     gap: 80px;
 }
-.header__menu__link{
-    font-family: var(--fuente-montserrat);
-    font-size: 1.5rem;
+
+.header__menu__link {
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--color-terciaria);
     text-decoration: none;
-
 }
-
-
 
 .presentacion {
     padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap : 40px;
-}
-
-.presentacion__contenido{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
     gap: 40px;
 }
 
+.presentacion__contenido {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
-.presentacion__contenido__titulo{
-    font-size: 2rem;
+.presentacion__contenido__titulo {
+    font-size: 3rem; /* antes 50% */
     font-family: var(--fuente-krona);
 }
 
 .titulo-destaque {
-    color: var(--color-terciaria); ;
+    color: var(--color-terciaria);
 }
 
-.presentacion__contenido__texto{
-    font-size: 1.5rem;
+.presentacion__contenido__texto {
+    font-size: 1.2rem; /* antes 50% */
+    line-height: 1.6;
     font-family: var(--fuente-montserrat);
 }
 
-.presentacion__enlaces{
+.presentacion__enlaces {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
+    gap: 24px;
 }
 
-.presentacion__enlaces__subtitulo{
+.presentacion__enlaces__subtitulo {
     font-family: var(--fuente-krona);
     font-weight: 400;
     font-size: 1.5rem;
 }
-.presentacion__enlaces__link{
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      border: 2px solid var(--color-terciaria);
-      width: 50%;
-      text-align: center;
-      border-radius: 8px;
-      font-size: 1.5rem;
-      font-weight: 600;
-      padding: 21.5px 0;
-      text-decoration: none;
-      color: var(--color-secundaria);
-      font-family: var(--fuente-montserrat);
+
+.presentacion__enlaces__link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--color-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1rem; /* antes 50% */
+    font-weight: 600;
+    padding: 16px 0;
+    text-decoration: none;
+    color: var(--color-secundaria);
+    font-family: var(--fuente-montserrat);
+    transition: background-color 0.3s ease;
 }
 
-.presentacion__enlaces__link:hover{
+.presentacion__enlaces__link:hover {
     background-color: var(--color-hover);
 }
 
-/* Se crea selector de Clase presenta__imagen   */
-.presentacion__imagen{
-    width: 50%; /* se ajusta a la medida de la pantalla que la visualiza la imagen */
-
+.presentacion__imagen {
+    width: 50%;
 }
 
-
-
-.footer{
-    color:var(--color-primaria);
+.footer {
+    color: var(--color-primaria);
     background-color: var(--color-terciaria);
     padding: 24px;
     text-align: center;
     font-family: var(--fuente-krona);
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* más legible */
     font-weight: 400;
+}
+
+/* Responsive  se agrega  @media de queries usa de medida para mantener en 700px 
+y que la imagen pase a la parte principal */
+@media(max-width: 700px) {
+    .header__menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .presentacion {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 8% 5%;
+    }
+    .presentacion__contenido {
+        width: 100%;
+        text-align: center;
+    }
+    .presentacion__contenido__titulo {
+        font-size: 2rem;
+    }
+    .presentacion__contenido__texto {
+        font-size: 1rem;
+    }
+    .presentacion__enlaces__link {
+        width: 80%;
+        font-size: 1rem;
+        padding: 14px 0;
+    }
 }
