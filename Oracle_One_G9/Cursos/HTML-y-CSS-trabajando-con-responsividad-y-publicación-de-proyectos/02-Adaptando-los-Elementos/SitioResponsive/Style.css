@@ -1,0 +1,124 @@
+/* --- Estilos base (Escritorio) --- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header nav {
+  position: relative;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  transition: all 0.3s;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+.columns {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+  text-align: center;
+}
+
+.column img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* --- Tableta (481px - 800px) --- */
+@media (max-width: 800px) {
+  .columns {
+    flex-wrap: wrap;
+  }
+  .column {
+    flex: 1 1 45%; /* 2 columnas */
+  }
+  main {
+    padding: 15px;
+  }
+  footer {
+    padding: 15px;
+  }
+}
+
+/* --- Celular (≤480px) --- */
+@media (max-width: 480px) {
+  header {
+    padding: 15px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #444;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+  }
+  header nav ul.active {
+    display: flex;
+  }
+
+  .columns {
+    flex-direction: column;
+  }
+
+  .column {
+    flex: 1 1 100%; /* 1 columna */
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  header nav ul li a {
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
